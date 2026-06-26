@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HuntAI Job Search OS</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <div>
+        <p class="eyebrow">HuntAI</p>
+        <h1>AI-powered job search command center</h1>
+        <p>Discover, score, prepare, and track high-quality software engineering opportunities from one dashboard.</p>
+      </div>
+      <div class="candidate-card" id="candidate"></div>
+    </header>
+
+    <main>
+      <section class="metrics" id="metrics"></section>
+      <section class="workspace">
+        <aside>
+          <h2>Skill gaps</h2>
+          <div id="skill-gaps"></div>
+          <h2>Pipeline</h2>
+          <div id="pipeline"></div>
+        </aside>
+        <section>
+          <div class="section-heading">
+            <h2>Recommended jobs</h2>
+            <button id="refresh">Refresh matches</button>
+          </div>
+          <div id="jobs" class="jobs"></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="assistant-modal">
+      <button class="close" id="close-modal">×</button>
+      <h2 id="modal-title">Assistant output</h2>
+      <pre id="modal-body"></pre>
+    </dialog>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

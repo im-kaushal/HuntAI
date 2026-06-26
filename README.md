@@ -4,8 +4,10 @@ HuntAI is an AI-powered Job Search Operating System for software engineers. It i
 
 ## Current scope
 
-This repository currently contains the first core domain scaffold:
+This repository now includes a runnable local HuntAI application:
 
+- A browser dashboard for candidate context, job recommendations, match explanations, company intelligence, referral targets, and pipeline state.
+- API endpoints for dashboard data, application-state updates, outreach drafts, cover letters, and interview plans.
 - Shared candidate, job, company, referral, outreach, and application pipeline types.
 - A deterministic baseline matching engine that produces an explainable match score.
 - Product and architecture documentation derived from the initial PRD.
@@ -15,7 +17,10 @@ This repository currently contains the first core domain scaffold:
 ```bash
 npm install
 npm run check
+npm start
 ```
+
+Open <http://localhost:3000> after starting the server.
 
 ## Core principle
 
